@@ -5,17 +5,20 @@ import './App.css';
 import { HomePage } from './app/containers/HomePage';
 
 const AppContainer = styled.div`
-  ${tw`
-       w-full
-       h-full
-       flex
-       flex-col
+ ${tw`
+     w-full
+    h-full
+    flex
+    flex-col
+    justify-center
+       
 
-`}`;
+ `}`;
 
 
 function App() {
-  return <AppContainer> <HomePage /> </AppContainer>
+  return <div className="align items-center">
+   <AppContainer> <HomePage /> </AppContainer></div>
    
 }
 
